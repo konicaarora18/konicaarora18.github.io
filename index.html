@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101d31">
+  <meta name="description" content="Konica Arora — PHP & Laravel Developer with experience in backend development, web applications, REST API integration and team coordination.">
+  <meta property="og:title" content="Konica Arora | PHP & Laravel Developer">
+  <meta property="og:description" content="Professional portfolio and resume of Konica Arora.">
+  <title>Konica Arora | PHP & Laravel Developer</title>
+  <style>
+    :root {
+      --navy: #101d31; --navy2: #172b46; --teal: #20b6b0;
+      --ink: #243247; --muted: #68778b; --paper: #f5f7fb;
+      --white: #fff; --line: #e4eaf1;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Arial, sans-serif; color: var(--ink); background: var(--paper); line-height: 1.65; }
+    a { color: inherit; }
+    .wrap { width: min(1080px, calc(100% - 40px)); margin: auto; }
+    header { background: linear-gradient(125deg, var(--navy), var(--navy2)); color: white; padding: 22px 0 76px; }
+    nav { display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+    .brand { font-weight: 800; letter-spacing: .08em; font-size: 14px; }
+    .navlinks { display: flex; gap: 24px; flex-wrap: wrap; }
+    .navlinks a { color: #d9e3ef; text-decoration: none; font-size: 13px; }
+    .hero { padding: 72px 0 0; max-width: 760px; }
+    .eyebrow { color: #71e0d9; text-transform: uppercase; letter-spacing: .16em; font-weight: 700; font-size: 12px; }
+    h1 { font-size: clamp(42px, 7vw, 68px); line-height: 1.06; margin: 14px 0; letter-spacing: -.045em; }
+    .hero p { color: #d1dce9; font-size: 18px; max-width: 670px; margin: 0 0 26px; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; padding: 12px 19px; border-radius: 9px; text-decoration: none; font-weight: 700; font-size: 14px; border: 1px solid transparent; }
+    .primary { background: var(--teal); color: #062b32; }
+    .secondary { border-color: #64748b; color: white; }
+    main { margin-top: -36px; padding-bottom: 60px; }
+    .panel { background: var(--white); border: 1px solid var(--line); border-radius: 16px; padding: 30px; box-shadow: 0 16px 40px rgba(16,29,49,.06); margin-bottom: 20px; }
+    .quick { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .quick strong { display: block; color: var(--navy); font-size: 14px; }
+    .quick span { color: var(--muted); font-size: 13px; }
+    section { scroll-margin-top: 25px; }
+    h2 { color: var(--navy); font-size: 22px; margin: 0 0 16px; letter-spacing: -.02em; }
+    .section-label { color: #159d9a; text-transform: uppercase; letter-spacing: .13em; font-size: 11px; font-weight: 800; margin-bottom: 7px; }
+    .about { color: #526176; margin: 0; }
+    .skills { display: flex; flex-wrap: wrap; gap: 9px; }
+    .skill { background: #eef7f7; color: #176b70; border: 1px solid #d8eeee; border-radius: 999px; padding: 7px 12px; font-size: 13px; font-weight: 650; }
+    .timeline { display: grid; gap: 22px; }
+    .job { border-left: 2px solid #bce8e5; padding-left: 18px; }
+    .jobtop { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+    .job h3 { margin: 0; color: var(--navy); font-size: 16px; }
+    .date { color: #159d9a; font-size: 13px; font-weight: 750; }
+    .company { color: var(--muted); font-size: 13px; margin: 2px 0 8px; }
+    ul { margin: 0; padding-left: 19px; color: #526176; }
+    li { margin: 4px 0; }
+    .education { display: grid; gap: 13px; }
+    .edu { display: flex; justify-content: space-between; gap: 12px; border-bottom: 1px solid var(--line); padding-bottom: 11px; }
+    .edu:last-child { border: 0; padding-bottom: 0; }
+    .edu strong { color: var(--navy); }
+    .edu span { color: var(--muted); font-size: 13px; text-align: right; }
+    .contactgrid { display: flex; flex-wrap: wrap; gap: 12px; }
+    .contactgrid a { text-decoration: none; background: #f2f6fa; border: 1px solid var(--line); border-radius: 9px; padding: 10px 13px; font-size: 14px; }
+    footer { text-align: center; color: #8290a2; font-size: 12px; padding: 24px 0 34px; }
+    @media (max-width: 650px) {
+      .navlinks { gap: 12px; }
+      .navlinks a { font-size: 12px; }
+      .hero { padding-top: 55px; }
+      .quick { grid-template-columns: 1fr; gap: 12px; }
+      .panel { padding: 22px; }
+      .edu { display: block; }
+      .edu span { display: block; text-align: left; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <nav>
+        <div class="brand">KONICA ARORA</div>
+        <div class="navlinks">
+          <a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#contact">Contact</a>
+        </div>
+      </nav>
+      <div class="hero">
+        <div class="eyebrow">Backend Development · Web Applications</div>
+        <h1>Konica Arora</h1>
+        <p>PHP &amp; Laravel Developer experienced in building web application portals, backend functionality, API integrations and database-driven solutions.</p>
+        <div class="actions">
+          <a class="btn primary" href="assets/Konica_Arora_Professional_CV.docx" download>Download Resume ↓</a>
+          <a class="btn secondary" href="mailto:konicaarora29@gmail.com">Contact Me</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="panel quick">
+      <div><strong>7 years' experience</strong><span>Professional experience, 2019–2026</span></div>
+      <div><strong>PHP &amp; Laravel</strong><span>Backend and web application development</span></div>
+      <div><strong>Team coordination</strong><span>Coordinated a six-member development team</span></div>
+    </div>
+
+    <section id="about" class="panel">
+      <div class="section-label">Profile</div>
+      <h2>About Me</h2>
+      <p class="about">I am a PHP and Laravel Developer with experience developing and maintaining web applications, backend functionality and application portals. My work has included API integration, database-driven development and server-side file management. I have also coordinated a team of six developers while contributing to backend delivery.</p>
+    </section>
+
+    <section id="skills" class="panel">
+      <div class="section-label">Technical toolkit</div>
+      <h2>Skills &amp; Technologies</h2>
+      <div class="skills">
+        <span class="skill">PHP</span><span class="skill">Laravel</span><span class="skill">CodeIgniter</span>
+        <span class="skill">MySQL</span><span class="skill">REST APIs</span><span class="skill">Vue.js</span>
+        <span class="skill">JavaScript</span><span class="skill">jQuery</span><span class="skill">jQuery UI</span>
+        <span class="skill">Node.js</span><span class="skill">HTML5</span><span class="skill">CSS3</span><span class="skill">Bootstrap</span>
+      </div>
+    </section>
+
+    <section id="experience" class="panel">
+      <div class="section-label">Career history</div>
+      <h2>Professional Experience</h2>
+      <div class="timeline">
+        <article class="job">
+          <div class="jobtop"><h3>PHP &amp; Laravel Developer</h3><span class="date">2023–2026</span></div>
+          <div class="company">Joomdev Techno Solutions Limited</div>
+          <ul>
+            <li>Developed and maintained web applications and server-side features using PHP and Laravel.</li>
+            <li>Worked with databases and REST/API integrations to support application functionality and data exchange.</li>
+            <li>Collaborated with the development team to troubleshoot issues and support reliable application delivery.</li>
+          </ul>
+        </article>
+        <article class="job">
+          <div class="jobtop"><h3>Full-time Backend Developer / Team Lead</h3><span class="date">2021–2023</span></div>
+          <div class="company">International Knowledge Academy (MNC)</div>
+          <ul>
+            <li>Coordinated a team of six developers while contributing to backend development and web application portals.</li>
+            <li>Developed portals and websites using Laravel, PHP, HTML5, CSS3, Bootstrap, JavaScript and jQuery.</li>
+            <li>Integrated internal and external APIs and managed server-side file handling.</li>
+          </ul>
+        </article>
+        <article class="job">
+          <div class="jobtop"><h3>Backend Developer</h3><span class="date">2019–2021</span></div>
+          <div class="company">MSP | The Knowledge Academy (MNC)</div>
+          <ul>
+            <li>Contributed to the development of web application portals and websites.</li>
+            <li>Built web interfaces and application features using Laravel, PHP, HTML5, CSS3, Bootstrap, JavaScript and jQuery.</li>
+            <li>Integrated data across backend services and databases.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="education" class="panel">
+      <div class="section-label">Academic background</div>
+      <h2>Education</h2>
+      <div class="education">
+        <div class="edu"><strong>Bachelor of Engineering (Computer Science &amp; Engineering)</strong><span>CT Group of Institutions · 2019</span></div>
+        <div class="edu"><strong>12th – Non-Medical</strong><span>Kanya Maha Vidyalaya · 2015</span></div>
+        <div class="edu"><strong>10th</strong><span>Sarup Public School · 2013</span></div>
+      </div>
+    </section>
+
+    <section id="contact" class="panel">
+      <div class="section-label">Get in touch</div>
+      <h2>Contact</h2>
+      <div class="contactgrid">
+        <a href="mailto:konicaarora29@gmail.com">✉ konicaarora29@gmail.com</a>
+        <a href="tel:+917986260968">☎ +91 7986260968</a>
+      </div>
+    </section>
+  </main>
+  <footer>© 2026 Konica Arora · PHP &amp; Laravel Developer</footer>
+</body>
+</html>
